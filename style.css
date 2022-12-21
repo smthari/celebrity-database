@@ -12,6 +12,7 @@
   background-position: center;
   z-index: 1;
   position: relative;
+  background-attachment: fixed;
 }
 
 .container::before {
