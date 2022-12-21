@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  background-image: url("https://img.freepik.com/free-photo/trendy-stylish-girl-white-tshirt-black-glasses-with-red-lips-is-listening-music-sunlight-city-background_291650-2064.jpg?w=1060&t=st=1671547739~exp=1671548339~hmac=27fc213ec2593d372921a87e90d1fb1f0b77830f98b83ceb62ea1f9015e78821");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #146db6;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.sub-container {
+  width: 55%;
+  margin: auto;
+}
+
+.information {
+  width: 55%;
+  height: 90%;
+  background-color: #fff;
+  padding: 3rem;
+  margin: auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 3px solid #333;
+  outline: none;
+  border: none;
+  background-color: #534bcec7;
+  color: #eee;
+  border: 1.5px solid #8d73ff;
+}
+
+input[type="text"]::placeholder {
+  color: #eee;
+  opacity: 0.7;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+button[type="submit"] {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 1rem auto;
+  background-color: #1762db;
+  color: #ebdbdb;
+  padding: 0.5rem;
+  width: 7rem;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #0f7dd7;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.heading {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+mark {
+  background-color: #2e2fca82;
+  color: #fff;
+}
+
+h3::first-letter,
+table,
+tr,
+thead {
+  text-transform: capitalize;
+}
+
+table {
+  width: 100%;
+  color: #212529;
+  max-width: 700px;
+  margin: auto;
+  border-collapse: collapse;
+  font-family: "Roboto", sans-serif;
+}
+
+table thead tr th {
+  color: #fff;
+  background-color: #146db6;
+  border-color: #454d55;
+  font-size: 14px;
+  padding: 1rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+table td {
+  padding: 1rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+  width: 0%;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+table tbody > tr:nth-of-type(odd) {
+  background-color: #f5f5f5;
+}
+
+table tbody > tr {
+  font-size: 14px;
+  padding: 15px 5px;
+}
+
+tbody tr td:first-child {
+  border-right: 1px solid #dee2e6;
+}
+
+@media (max-width: 608px) {
+  .sub-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .information {
+    width: 90%;
+    margin: auto;
+  }
+}
